@@ -22,7 +22,7 @@ cost = computeCost(X, y, theta);
 disp(sprintf('Cost for zeros theta,%.2d', cost));
 
 %Gradient Descent
-theta = gradientDescent(X, y, theta, alpha, iterations);
+[theta, J_history] = gradientDescent(X, y, theta, alpha, iterations);
 
 fprintf('\nTheta found by gradient descent: ');
 fprintf('%f %f \n', theta(1), theta(2));

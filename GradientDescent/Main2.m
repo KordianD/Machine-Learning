@@ -17,10 +17,10 @@ alpha = 0.01;
 num_iters = 400;
  
 %Starting points for theta
-theta = zeros(3, 1);
+theta2 = zeros(3, 1);
 
 %Using gradient descent
-[theta, J_history] = gradientDescent(X, y, theta, alpha, num_iters);
+[theta2, J_history] = gradientDescent(X, y, theta2, alpha, num_iters);
 
 % Plot the convergence graph
 figure;
@@ -30,6 +30,6 @@ ylabel('Cost J');
 
 % Display gradient descent's result
 fprintf('Theta computed from gradient descent: \n');
-fprintf(' %f \n', theta);
+fprintf(' %f \n', theta2);
 fprintf('\n');
 
